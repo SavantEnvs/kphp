@@ -1,0 +1,15 @@
+project: savantenvs/kphp
+target: ffi
+duration: 1200
+
+# The KPHP compiler's FFI C-declaration parser (compiler/ffi), AFL-instrumented with ASan+UBSan:
+# ffi_parse_file() (FFI_SCOPE/FFI_LIB preprocessor, ragel lexer, bison grammar, ParsingDriver) and
+# ffi_parse_type() on one file, as for FFI::cdef()/FFI::load() headers and FFI::new() type strings.
+cmds:
+  - cmd: /mayhem/mayhem/build/bin/ffi_parse @@
+    afl: true
+    timeout: 5
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/ffi/testsuite

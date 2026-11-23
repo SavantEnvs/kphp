@@ -1,0 +1,14 @@
+project: savantenvs/kphp
+target: tl-compiler
+duration: 1200
+
+# Upstream's TL schema compiler CLI (common/tl/compiler), AFL-instrumented with ASan+UBSan:
+# lexes/parses/type-checks one .tl schema and writes the .tlo to a relative scratch file.
+cmds:
+  - cmd: /mayhem/mayhem/build/bin/tl-compiler -e out.tlo @@
+    afl: true
+    timeout: 5
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/tl-compiler/testsuite

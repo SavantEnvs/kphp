@@ -1,0 +1,15 @@
+project: savantenvs/kphp
+target: tlo-parsing
+duration: 1200
+
+# The binary .tlo schema reader (common/tlo-parsing), AFL-instrumented with ASan+UBSan: parse_tlo,
+# then the KPHP compiler's passes (replace_anonymous_args, perform_flat_optimization,
+# tl_scheme_final_check), then tl_scheme::to_str (mayhem/tlo_dump.cpp).
+cmds:
+  - cmd: /mayhem/mayhem/build/bin/tlo_dump @@
+    afl: true
+    timeout: 5
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/tlo-parsing/testsuite

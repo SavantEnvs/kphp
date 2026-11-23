@@ -1,0 +1,14 @@
+project: savantenvs/kphp
+target: php-lexer
+duration: 1200
+
+# libFuzzer harness (mayhem/php_lexer_fuzz.cpp) over the KPHP compiler's PHP lexer (compiler/lexer.cpp),
+# ASan+UBSan: php_text_to_tokens() as run on every .php source file, plus phpdoc_to_tokens().
+cmds:
+  - cmd: /mayhem/mayhem/build/bin/php_lexer_fuzz
+    libfuzzer: true
+    timeout: 5
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/php-lexer/testsuite

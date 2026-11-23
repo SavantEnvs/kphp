@@ -1,0 +1,15 @@
+project: savantenvs/kphp
+target: unicode
+duration: 1200
+
+# libFuzzer harness (mayhem/unicode_fuzz.cpp) over common/unicode, ASan+UBSan: clean_str(), the body
+# of the PHP builtin prepare_search_query() (HTML-entity + UTF-8 decode, case folding, NFKD, word
+# reordering), plus the vkext UTF-8 decode / simplify / re-encode helpers.
+cmds:
+  - cmd: /mayhem/mayhem/build/bin/unicode_fuzz
+    libfuzzer: true
+    timeout: 5
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/unicode/testsuite

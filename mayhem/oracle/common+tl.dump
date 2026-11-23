@@ -1,0 +1,1740 @@
+version 4 types 42 functions 17 magics 114
+after-passes types 21 functions 17
+TL-SCHEME:
+scheme-version: 4
+types:
+  type: exactlyOnce.Uuid
+	id: c97c16b2
+	arity: 0
+	flags: UNKNOWN FLAGS {00000008}
+constructors:
+combinator: exactlyOnce.uuid
+	id: c97c16b2
+	kind: constructor
+	type_id: c97c16b2
+args:
+   arg #1: 
+	name: lo
+	flags: FLAG_NOVAR
+	var_num: -1
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: 22076cba
+	type_expr:
+   arg #2: 
+	name: hi
+	flags: FLAG_NOVAR
+	var_num: -1
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: 22076cba
+	type_expr:
+result_type:
+type-expr
+	flags: FLAG_NOVAR
+	type_id: c97c16b2
+	type_expr:
+  type: tracing.TraceContext
+	id: c463a95c
+	arity: 0
+	flags: UNKNOWN FLAGS {00000008}
+constructors:
+combinator: tracing.traceContext
+	id: c463a95c
+	kind: constructor
+	type_id: c463a95c
+args:
+   arg #1: 
+	name: fields_mask
+	flags: NO FLAGS
+	var_num: 0
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_NOVAR
+	type_id: 70659eff
+	type_expr:
+   arg #2: 
+	name: trace_id
+	flags: FLAG_NOVAR
+	var_num: -1
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: 2f4ac855
+	type_expr:
+   arg #3: 
+	name: parent_id
+	flags: FLAG_OPT_FIELD
+	var_num: -1
+	exist_var_num: 0
+	exist_var_bit: 2
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: 22076cba
+	type_expr:
+   arg #4: 
+	name: source_id
+	flags: FLAG_OPT_FIELD
+	var_num: -1
+	exist_var_num: 0
+	exist_var_bit: 3
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: b5286e24
+	type_expr:
+   arg #5: 
+	name: reserved_status_0
+	flags: FLAG_OPT_FIELD
+	var_num: -1
+	exist_var_num: 0
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: 3fedd339
+	type_expr:
+   arg #6: 
+	name: reserved_status_1
+	flags: FLAG_OPT_FIELD
+	var_num: -1
+	exist_var_num: 0
+	exist_var_bit: 1
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: 3fedd339
+	type_expr:
+   arg #7: 
+	name: reserved_level_0
+	flags: FLAG_OPT_FIELD
+	var_num: -1
+	exist_var_num: 0
+	exist_var_bit: 4
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: 3fedd339
+	type_expr:
+   arg #8: 
+	name: reserved_level_1
+	flags: FLAG_OPT_FIELD
+	var_num: -1
+	exist_var_num: 0
+	exist_var_bit: 5
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: 3fedd339
+	type_expr:
+   arg #9: 
+	name: reserved_level_2
+	flags: FLAG_OPT_FIELD
+	var_num: -1
+	exist_var_num: 0
+	exist_var_bit: 6
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: 3fedd339
+	type_expr:
+   arg #10: 
+	name: debug_flag
+	flags: FLAG_OPT_FIELD
+	var_num: -1
+	exist_var_num: 0
+	exist_var_bit: 7
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: 3fedd339
+	type_expr:
+result_type:
+type-expr
+	flags: FLAG_NOVAR
+	type_id: c463a95c
+	type_expr:
+  type: Vector
+	id: 1cb5c415
+	arity: 1
+	flags: UNKNOWN FLAGS {00000008}
+constructors:
+combinator: vector
+	id: 1cb5c415
+	kind: constructor
+	type_id: 1cb5c415
+args:
+   arg #1: 
+	name: t
+	flags: FLAG_BARE|FLAG_OPT_VAR
+	var_num: 0
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_NOVAR
+	type_id: 2cecf817
+	type_expr:
+   arg #2: 
+	name: 
+	flags: NO FLAGS
+	var_num: 1
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_NOVAR
+	type_id: 70659eff
+	type_expr:
+   arg #3: 
+	name: 
+	flags: NO FLAGS
+	var_num: -1
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+tl-type-array:
+	flags: NO FLAGS
+	cell_len: 1
+	multiplicity:   diff: 0
+var_num: 1
+flags: NO FLAGS
+
+args:
+   arg #1: 
+	name: 
+	flags: NO FLAGS
+	var_num: -1
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-var
+	flags: NO FLAGS
+	var_num: 0
+result_type:
+type-expr
+	flags: NO FLAGS
+	type_id: 1cb5c415
+	type_expr:
+type-var
+	flags: NO FLAGS
+	var_num: 0
+
+  type: RpcInvokeReqExtra
+	id: f3ef81a9
+	arity: 1
+	flags: UNKNOWN FLAGS {00000008}
+constructors:
+combinator: rpcInvokeReqExtra
+	id: f3ef81a9
+	kind: constructor
+	type_id: f3ef81a9
+args:
+   arg #1: 
+	name: flags
+	flags: FLAG_BARE|FLAG_OPT_VAR
+	var_num: 0
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_NOVAR
+	type_id: 70659eff
+	type_expr:
+   arg #2: 
+	name: return_binlog_pos
+	flags: FLAG_OPT_FIELD
+	var_num: -1
+	exist_var_num: 0
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: 3fedd339
+	type_expr:
+   arg #3: 
+	name: return_binlog_time
+	flags: FLAG_OPT_FIELD
+	var_num: -1
+	exist_var_num: 0
+	exist_var_bit: 1
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: 3fedd339
+	type_expr:
+   arg #4: 
+	name: return_pid
+	flags: FLAG_OPT_FIELD
+	var_num: -1
+	exist_var_num: 0
+	exist_var_bit: 2
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: 3fedd339
+	type_expr:
+   arg #5: 
+	name: return_request_sizes
+	flags: FLAG_OPT_FIELD
+	var_num: -1
+	exist_var_num: 0
+	exist_var_bit: 3
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: 3fedd339
+	type_expr:
+   arg #6: 
+	name: return_failed_subqueries
+	flags: FLAG_OPT_FIELD
+	var_num: -1
+	exist_var_num: 0
+	exist_var_bit: 4
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: 3fedd339
+	type_expr:
+   arg #7: 
+	name: return_query_stats
+	flags: FLAG_OPT_FIELD
+	var_num: -1
+	exist_var_num: 0
+	exist_var_bit: 6
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: 3fedd339
+	type_expr:
+   arg #8: 
+	name: no_result
+	flags: FLAG_OPT_FIELD
+	var_num: -1
+	exist_var_num: 0
+	exist_var_bit: 7
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: 3fedd339
+	type_expr:
+   arg #9: 
+	name: wait_binlog_pos
+	flags: FLAG_OPT_FIELD
+	var_num: -1
+	exist_var_num: 0
+	exist_var_bit: 16
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: 22076cba
+	type_expr:
+   arg #10: 
+	name: string_forward_keys
+	flags: FLAG_OPT_FIELD
+	var_num: -1
+	exist_var_num: 0
+	exist_var_bit: 18
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: 1cb5c415
+	type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: b5286e24
+	type_expr:
+
+   arg #11: 
+	name: int_forward_keys
+	flags: FLAG_OPT_FIELD
+	var_num: -1
+	exist_var_num: 0
+	exist_var_bit: 19
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: 1cb5c415
+	type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: 22076cba
+	type_expr:
+
+   arg #12: 
+	name: string_forward
+	flags: FLAG_OPT_FIELD
+	var_num: -1
+	exist_var_num: 0
+	exist_var_bit: 20
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: b5286e24
+	type_expr:
+   arg #13: 
+	name: int_forward
+	flags: FLAG_OPT_FIELD
+	var_num: -1
+	exist_var_num: 0
+	exist_var_bit: 21
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: 22076cba
+	type_expr:
+   arg #14: 
+	name: custom_timeout_ms
+	flags: FLAG_OPT_FIELD
+	var_num: -1
+	exist_var_num: 0
+	exist_var_bit: 23
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: a8509bda
+	type_expr:
+   arg #15: 
+	name: supported_compression_version
+	flags: FLAG_OPT_FIELD
+	var_num: -1
+	exist_var_num: 0
+	exist_var_bit: 25
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: a8509bda
+	type_expr:
+   arg #16: 
+	name: random_delay
+	flags: FLAG_OPT_FIELD
+	var_num: -1
+	exist_var_num: 0
+	exist_var_bit: 26
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: 2210c154
+	type_expr:
+   arg #17: 
+	name: return_view_number
+	flags: FLAG_OPT_FIELD
+	var_num: -1
+	exist_var_num: 0
+	exist_var_bit: 27
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: 3fedd339
+	type_expr:
+   arg #18: 
+	name: persistent_query
+	flags: FLAG_OPT_FIELD
+	var_num: -1
+	exist_var_num: 0
+	exist_var_bit: 28
+type_expr:
+type-expr
+	flags: FLAG_NOVAR
+	type_id: a0e1a2e5
+	type_expr:
+   arg #19: 
+	name: trace_context
+	flags: FLAG_OPT_FIELD
+	var_num: -1
+	exist_var_num: 0
+	exist_var_bit: 29
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: c463a95c
+	type_expr:
+   arg #20: 
+	name: execution_context
+	flags: FLAG_OPT_FIELD
+	var_num: -1
+	exist_var_num: 0
+	exist_var_bit: 30
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: b5286e24
+	type_expr:
+result_type:
+type-expr
+	flags: NO FLAGS
+	type_id: f3ef81a9
+	type_expr:
+  diff: 0
+var_num: 0
+flags: NO FLAGS
+
+  type: Bool
+	id: 250be282
+	arity: 0
+	flags: FLAG_NOCONS|UNKNOWN FLAGS {00000010}
+constructors:
+combinator: boolFalse
+	id: bc799737
+	kind: constructor
+	type_id: 250be282
+args:
+result_type:
+type-expr
+	flags: FLAG_NOVAR
+	type_id: 250be282
+	type_expr:
+combinator: boolTrue
+	id: 997275b5
+	kind: constructor
+	type_id: 250be282
+args:
+result_type:
+type-expr
+	flags: FLAG_NOVAR
+	type_id: 250be282
+	type_expr:
+  type: RpcReqResult
+	id: 194ae8bb
+	arity: 1
+	flags: UNKNOWN FLAGS {00000010}
+constructors:
+combinator: rpcReqResult
+	id: 63aeda4e
+	kind: constructor
+	type_id: 194ae8bb
+args:
+   arg #1: 
+	name: X
+	flags: FLAG_BARE|FLAG_OPT_VAR
+	var_num: 0
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_NOVAR
+	type_id: 2cecf817
+	type_expr:
+   arg #2: 
+	name: query_id
+	flags: FLAG_NOVAR
+	var_num: -1
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: 22076cba
+	type_expr:
+   arg #3: 
+	name: result
+	flags: NO FLAGS
+	var_num: -1
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: NO FLAGS
+	type_id: bde1c550
+	type_expr:
+type-var
+	flags: NO FLAGS
+	var_num: 0
+
+result_type:
+type-expr
+	flags: NO FLAGS
+	type_id: 194ae8bb
+	type_expr:
+type-var
+	flags: NO FLAGS
+	var_num: 0
+
+combinator: rpcReqError
+	id: 7ae432f5
+	kind: constructor
+	type_id: 194ae8bb
+args:
+   arg #1: 
+	name: X
+	flags: FLAG_BARE|FLAG_OPT_VAR
+	var_num: 0
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_NOVAR
+	type_id: 2cecf817
+	type_expr:
+   arg #2: 
+	name: query_id
+	flags: FLAG_NOVAR
+	var_num: -1
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: 22076cba
+	type_expr:
+   arg #3: 
+	name: error_code
+	flags: FLAG_NOVAR
+	var_num: -1
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: a8509bda
+	type_expr:
+   arg #4: 
+	name: error
+	flags: FLAG_NOVAR
+	var_num: -1
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: b5286e24
+	type_expr:
+result_type:
+type-expr
+	flags: NO FLAGS
+	type_id: 194ae8bb
+	type_expr:
+type-var
+	flags: NO FLAGS
+	var_num: 0
+
+  type: Dictionary
+	id: 1f4c618f
+	arity: 1
+	flags: UNKNOWN FLAGS {00000008}
+constructors:
+combinator: dictionary
+	id: 1f4c618f
+	kind: constructor
+	type_id: 1f4c618f
+args:
+   arg #1: 
+	name: t
+	flags: FLAG_BARE|FLAG_OPT_VAR
+	var_num: 0
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_NOVAR
+	type_id: 2cecf817
+	type_expr:
+   arg #2: 
+	name: 
+	flags: NO FLAGS
+	var_num: -1
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_BARE
+	type_id: 1cb5c415
+	type_expr:
+type-expr
+	flags: FLAG_BARE
+	type_id: 239c1b62
+	type_expr:
+type-var
+	flags: NO FLAGS
+	var_num: 0
+
+
+result_type:
+type-expr
+	flags: NO FLAGS
+	type_id: 1f4c618f
+	type_expr:
+type-var
+	flags: NO FLAGS
+	var_num: 0
+
+  type: Int
+	id: a8509bda
+	arity: 0
+	flags: FLAG_BARE
+constructors:
+combinator: int
+	id: a8509bda
+	kind: constructor
+	type_id: a8509bda
+args:
+result_type:
+type-expr
+	flags: FLAG_NOVAR
+	type_id: a8509bda
+	type_expr:
+  type: Double
+	id: 2210c154
+	arity: 0
+	flags: FLAG_BARE
+constructors:
+combinator: double
+	id: 2210c154
+	kind: constructor
+	type_id: 2210c154
+args:
+result_type:
+type-expr
+	flags: FLAG_NOVAR
+	type_id: 2210c154
+	type_expr:
+  type: #
+	id: 70659eff
+	arity: 0
+	flags: NO FLAGS
+constructors:
+  type: String
+	id: b5286e24
+	arity: 0
+	flags: FLAG_BARE
+constructors:
+combinator: string
+	id: b5286e24
+	kind: constructor
+	type_id: b5286e24
+args:
+result_type:
+type-expr
+	flags: FLAG_NOVAR
+	type_id: b5286e24
+	type_expr:
+  type: BoolStat
+	id: 92cbcbfa
+	arity: 0
+	flags: NO FLAGS
+constructors:
+combinator: boolStat
+	id: 92cbcbfa
+	kind: constructor
+	type_id: 92cbcbfa
+args:
+   arg #1: 
+	name: statTrue
+	flags: FLAG_NOVAR
+	var_num: -1
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: a8509bda
+	type_expr:
+   arg #2: 
+	name: statFalse
+	flags: FLAG_NOVAR
+	var_num: -1
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: a8509bda
+	type_expr:
+   arg #3: 
+	name: statUnknown
+	flags: FLAG_NOVAR
+	var_num: -1
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: a8509bda
+	type_expr:
+result_type:
+type-expr
+	flags: FLAG_NOVAR
+	type_id: 92cbcbfa
+	type_expr:
+  type: DictionaryField
+	id: 239c1b62
+	arity: 1
+	flags: UNKNOWN FLAGS {00000008}
+constructors:
+combinator: dictionaryField
+	id: 239c1b62
+	kind: constructor
+	type_id: 239c1b62
+args:
+   arg #1: 
+	name: t
+	flags: FLAG_BARE|FLAG_OPT_VAR
+	var_num: 0
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_NOVAR
+	type_id: 2cecf817
+	type_expr:
+   arg #2: 
+	name: key
+	flags: FLAG_NOVAR
+	var_num: -1
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: b5286e24
+	type_expr:
+   arg #3: 
+	name: value
+	flags: NO FLAGS
+	var_num: -1
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-var
+	flags: NO FLAGS
+	var_num: 0
+result_type:
+type-expr
+	flags: NO FLAGS
+	type_id: 239c1b62
+	type_expr:
+type-var
+	flags: NO FLAGS
+	var_num: 0
+
+  type: tracing.TraceID
+	id: 2f4ac855
+	arity: 0
+	flags: UNKNOWN FLAGS {00000008}
+constructors:
+combinator: tracing.traceID
+	id: 2f4ac855
+	kind: constructor
+	type_id: 2f4ac855
+args:
+   arg #1: 
+	name: lo
+	flags: FLAG_NOVAR
+	var_num: -1
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: 22076cba
+	type_expr:
+   arg #2: 
+	name: hi
+	flags: FLAG_NOVAR
+	var_num: -1
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: 22076cba
+	type_expr:
+result_type:
+type-expr
+	flags: FLAG_NOVAR
+	type_id: 2f4ac855
+	type_expr:
+  type: net.Pid
+	id: 46409ccf
+	arity: 0
+	flags: UNKNOWN FLAGS {00000008}
+constructors:
+combinator: net.pid
+	id: 46409ccf
+	kind: constructor
+	type_id: 46409ccf
+args:
+   arg #1: 
+	name: ip
+	flags: FLAG_NOVAR
+	var_num: -1
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: a8509bda
+	type_expr:
+   arg #2: 
+	name: port_pid
+	flags: FLAG_NOVAR
+	var_num: -1
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: a8509bda
+	type_expr:
+   arg #3: 
+	name: utime
+	flags: FLAG_NOVAR
+	var_num: -1
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: a8509bda
+	type_expr:
+result_type:
+type-expr
+	flags: FLAG_NOVAR
+	type_id: 46409ccf
+	type_expr:
+  type: RpcReqResultExtra
+	id: c5011709
+	arity: 1
+	flags: UNKNOWN FLAGS {00000008}
+constructors:
+combinator: rpcReqResultExtra
+	id: c5011709
+	kind: constructor
+	type_id: c5011709
+args:
+   arg #1: 
+	name: flags
+	flags: FLAG_BARE|FLAG_OPT_VAR
+	var_num: 0
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_NOVAR
+	type_id: 70659eff
+	type_expr:
+   arg #2: 
+	name: binlog_pos
+	flags: FLAG_OPT_FIELD
+	var_num: -1
+	exist_var_num: 0
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: 22076cba
+	type_expr:
+   arg #3: 
+	name: binlog_time
+	flags: FLAG_OPT_FIELD
+	var_num: -1
+	exist_var_num: 0
+	exist_var_bit: 1
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: 22076cba
+	type_expr:
+   arg #4: 
+	name: engine_pid
+	flags: FLAG_OPT_FIELD
+	var_num: -1
+	exist_var_num: 0
+	exist_var_bit: 2
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: 46409ccf
+	type_expr:
+   arg #5: 
+	name: request_size
+	flags: FLAG_OPT_FIELD
+	var_num: -1
+	exist_var_num: 0
+	exist_var_bit: 3
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: a8509bda
+	type_expr:
+   arg #6: 
+	name: response_size
+	flags: FLAG_OPT_FIELD
+	var_num: -1
+	exist_var_num: 0
+	exist_var_bit: 3
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: a8509bda
+	type_expr:
+   arg #7: 
+	name: failed_subqueries
+	flags: FLAG_OPT_FIELD
+	var_num: -1
+	exist_var_num: 0
+	exist_var_bit: 4
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: a8509bda
+	type_expr:
+   arg #8: 
+	name: compression_version
+	flags: FLAG_OPT_FIELD
+	var_num: -1
+	exist_var_num: 0
+	exist_var_bit: 5
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: a8509bda
+	type_expr:
+   arg #9: 
+	name: stats
+	flags: FLAG_OPT_FIELD
+	var_num: -1
+	exist_var_num: 0
+	exist_var_bit: 6
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: 1f4c618f
+	type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: b5286e24
+	type_expr:
+
+   arg #10: 
+	name: shards_binlog_pos
+	flags: FLAG_OPT_FIELD
+	var_num: -1
+	exist_var_num: 0
+	exist_var_bit: 14
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: 1f4c618f
+	type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: 22076cba
+	type_expr:
+
+   arg #11: 
+	name: epoch_number
+	flags: FLAG_OPT_FIELD
+	var_num: -1
+	exist_var_num: 0
+	exist_var_bit: 27
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: 22076cba
+	type_expr:
+   arg #12: 
+	name: view_number
+	flags: FLAG_OPT_FIELD
+	var_num: -1
+	exist_var_num: 0
+	exist_var_bit: 27
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: 22076cba
+	type_expr:
+result_type:
+type-expr
+	flags: NO FLAGS
+	type_id: c5011709
+	type_expr:
+  diff: 0
+var_num: 0
+flags: NO FLAGS
+
+  type: True
+	id: 3fedd339
+	arity: 0
+	flags: FLAG_BARE|UNKNOWN FLAGS {00000008}
+constructors:
+combinator: true
+	id: 3fedd339
+	kind: constructor
+	type_id: 3fedd339
+args:
+result_type:
+type-expr
+	flags: FLAG_NOVAR
+	type_id: 3fedd339
+	type_expr:
+  type: RpcResponse
+	id: bde1c550
+	arity: 1
+	flags: FLAG_DEFAULT_CONSTRUCTOR|UNKNOWN FLAGS {00000010}
+constructors:
+combinator: rpcResponseError
+	id: b527877d
+	kind: constructor
+	type_id: bde1c550
+args:
+   arg #1: 
+	name: X
+	flags: FLAG_BARE|FLAG_OPT_VAR
+	var_num: 0
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_NOVAR
+	type_id: 2cecf817
+	type_expr:
+   arg #2: 
+	name: error_code
+	flags: FLAG_NOVAR
+	var_num: -1
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: a8509bda
+	type_expr:
+   arg #3: 
+	name: error
+	flags: FLAG_NOVAR
+	var_num: -1
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: b5286e24
+	type_expr:
+result_type:
+type-expr
+	flags: NO FLAGS
+	type_id: bde1c550
+	type_expr:
+type-var
+	flags: NO FLAGS
+	var_num: 0
+
+combinator: rpcResponseHeader
+	id: 8cc84ce1
+	kind: constructor
+	type_id: bde1c550
+args:
+   arg #1: 
+	name: X
+	flags: FLAG_BARE|FLAG_OPT_VAR
+	var_num: 0
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_NOVAR
+	type_id: 2cecf817
+	type_expr:
+   arg #2: 
+	name: flags
+	flags: NO FLAGS
+	var_num: 1
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_NOVAR
+	type_id: 70659eff
+	type_expr:
+   arg #3: 
+	name: extra
+	flags: NO FLAGS
+	var_num: -1
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_BARE
+	type_id: c5011709
+	type_expr:
+  diff: 0
+var_num: 1
+flags: NO FLAGS
+
+   arg #4: 
+	name: result
+	flags: NO FLAGS
+	var_num: -1
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-var
+	flags: NO FLAGS
+	var_num: 0
+result_type:
+type-expr
+	flags: NO FLAGS
+	type_id: bde1c550
+	type_expr:
+type-var
+	flags: NO FLAGS
+	var_num: 0
+
+combinator: rpcResponseOk
+	id: 840e0ecc
+	kind: constructor
+	type_id: bde1c550
+args:
+   arg #1: 
+	name: X
+	flags: FLAG_BARE|FLAG_OPT_VAR
+	var_num: 0
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_NOVAR
+	type_id: 2cecf817
+	type_expr:
+   arg #2: 
+	name: result
+	flags: NO FLAGS
+	var_num: -1
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-var
+	flags: NO FLAGS
+	var_num: 0
+result_type:
+type-expr
+	flags: NO FLAGS
+	type_id: bde1c550
+	type_expr:
+type-var
+	flags: NO FLAGS
+	var_num: 0
+
+  type: Long
+	id: 22076cba
+	arity: 0
+	flags: FLAG_BARE
+constructors:
+combinator: long
+	id: 22076cba
+	kind: constructor
+	type_id: 22076cba
+args:
+result_type:
+type-expr
+	flags: FLAG_NOVAR
+	type_id: 22076cba
+	type_expr:
+  type: Type
+	id: 2cecf817
+	arity: 0
+	flags: NO FLAGS
+constructors:
+  type: exactlyOnce.PersistentRequest
+	id: a0e1a2e5
+	arity: 0
+	flags: UNKNOWN FLAGS {00000010}
+constructors:
+combinator: exactlyOnce.prepareRequest
+	id: c8d71b66
+	kind: constructor
+	type_id: a0e1a2e5
+args:
+   arg #1: 
+	name: persistent_query_uuid
+	flags: FLAG_NOVAR
+	var_num: -1
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: c97c16b2
+	type_expr:
+result_type:
+type-expr
+	flags: FLAG_NOVAR
+	type_id: a0e1a2e5
+	type_expr:
+combinator: exactlyOnce.commitRequest
+	id: 6836b983
+	kind: constructor
+	type_id: a0e1a2e5
+args:
+   arg #1: 
+	name: persistent_query_uuid
+	flags: FLAG_NOVAR
+	var_num: -1
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: c97c16b2
+	type_expr:
+   arg #2: 
+	name: persistent_slot_uuid
+	flags: FLAG_NOVAR
+	var_num: -1
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: c97c16b2
+	type_expr:
+result_type:
+type-expr
+	flags: FLAG_NOVAR
+	type_id: a0e1a2e5
+	type_expr:
+functions:
+combinator: rpcInvokeReq
+	id: 2374df3d
+	kind: function
+	type_id: 194ae8bb
+args:
+   arg #1: 
+	name: X
+	flags: FLAG_BARE|FLAG_OPT_VAR
+	var_num: 0
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_NOVAR
+	type_id: 2cecf817
+	type_expr:
+   arg #2: 
+	name: query_id
+	flags: FLAG_NOVAR
+	var_num: -1
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: 22076cba
+	type_expr:
+   arg #3: 
+	name: query
+	flags: FLAG_EXCL
+	var_num: -1
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-var
+	flags: NO FLAGS
+	var_num: 0
+result_type:
+type-expr
+	flags: NO FLAGS
+	type_id: 194ae8bb
+	type_expr:
+type-var
+	flags: NO FLAGS
+	var_num: 0
+
+combinator: rpcDestFlags
+	id: e352035e
+	kind: function
+	type_id: 00000000
+args:
+   arg #1: 
+	name: X
+	flags: FLAG_BARE|FLAG_OPT_VAR
+	var_num: 0
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_NOVAR
+	type_id: 2cecf817
+	type_expr:
+   arg #2: 
+	name: flags
+	flags: NO FLAGS
+	var_num: 1
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_NOVAR
+	type_id: 70659eff
+	type_expr:
+   arg #3: 
+	name: extra
+	flags: NO FLAGS
+	var_num: -1
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_BARE
+	type_id: f3ef81a9
+	type_expr:
+  diff: 0
+var_num: 1
+flags: NO FLAGS
+
+   arg #4: 
+	name: query
+	flags: FLAG_EXCL
+	var_num: -1
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-var
+	flags: NO FLAGS
+	var_num: 0
+result_type:
+type-var
+	flags: NO FLAGS
+	var_num: 0
+combinator: rpcDestActorFlags
+	id: f0a5acf7
+	kind: function
+	type_id: 00000000
+args:
+   arg #1: 
+	name: X
+	flags: FLAG_BARE|FLAG_OPT_VAR
+	var_num: 0
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_NOVAR
+	type_id: 2cecf817
+	type_expr:
+   arg #2: 
+	name: actor_id
+	flags: FLAG_NOVAR
+	var_num: -1
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: 22076cba
+	type_expr:
+   arg #3: 
+	name: flags
+	flags: NO FLAGS
+	var_num: 1
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_NOVAR
+	type_id: 70659eff
+	type_expr:
+   arg #4: 
+	name: extra
+	flags: NO FLAGS
+	var_num: -1
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_BARE
+	type_id: f3ef81a9
+	type_expr:
+  diff: 0
+var_num: 1
+flags: NO FLAGS
+
+   arg #5: 
+	name: query
+	flags: FLAG_EXCL
+	var_num: -1
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-var
+	flags: NO FLAGS
+	var_num: 0
+result_type:
+type-var
+	flags: NO FLAGS
+	var_num: 0
+combinator: engine.count
+	id: 19d0f020
+	kind: function
+	type_id: 92cbcbfa
+args:
+result_type:
+type-expr
+	flags: FLAG_NOVAR
+	type_id: 92cbcbfa
+	type_expr:
+combinator: engine.sendSignal
+	id: 1a7708a3
+	kind: function
+	type_id: 3fedd339
+args:
+   arg #1: 
+	name: signal
+	flags: FLAG_NOVAR
+	var_num: -1
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: a8509bda
+	type_expr:
+result_type:
+type-expr
+	flags: FLAG_NOVAR
+	type_id: 3fedd339
+	type_expr:
+combinator: rpcDestActor
+	id: 7568aabd
+	kind: function
+	type_id: 00000000
+args:
+   arg #1: 
+	name: X
+	flags: FLAG_BARE|FLAG_OPT_VAR
+	var_num: 0
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_NOVAR
+	type_id: 2cecf817
+	type_expr:
+   arg #2: 
+	name: actor_id
+	flags: FLAG_NOVAR
+	var_num: -1
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: 22076cba
+	type_expr:
+   arg #3: 
+	name: query
+	flags: FLAG_EXCL
+	var_num: -1
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-var
+	flags: NO FLAGS
+	var_num: 0
+result_type:
+type-var
+	flags: NO FLAGS
+	var_num: 0
+combinator: kphp.pingRpcCluster
+	id: a677ee41
+	kind: function
+	type_id: a8509bda
+args:
+   arg #1: 
+	name: id
+	flags: FLAG_NOVAR
+	var_num: -1
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: a8509bda
+	type_expr:
+result_type:
+type-expr
+	flags: FLAG_NOVAR
+	type_id: a8509bda
+	type_expr:
+combinator: engine.filteredStat
+	id: 594870d6
+	kind: function
+	type_id: 9d56e6b2
+args:
+   arg #1: 
+	name: stat_names
+	flags: FLAG_NOVAR
+	var_num: -1
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: 1cb5c415
+	type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: b5286e24
+	type_expr:
+
+result_type:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: 1f4c618f
+	type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: b5286e24
+	type_expr:
+
+combinator: engine.stat
+	id: efb3c36b
+	kind: function
+	type_id: 9d56e6b2
+args:
+result_type:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: 1f4c618f
+	type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: b5286e24
+	type_expr:
+
+combinator: engine.nop
+	id: 166bb7c6
+	kind: function
+	type_id: 3fedd339
+args:
+result_type:
+type-expr
+	flags: FLAG_NOVAR
+	type_id: 3fedd339
+	type_expr:
+combinator: engine.readNop
+	id: 9d2b841f
+	kind: function
+	type_id: 3fedd339
+args:
+result_type:
+type-expr
+	flags: FLAG_NOVAR
+	type_id: 3fedd339
+	type_expr:
+combinator: engine.pid
+	id: 559d6e36
+	kind: function
+	type_id: 46409ccf
+args:
+result_type:
+type-expr
+	flags: FLAG_NOVAR
+	type_id: 46409ccf
+	type_expr:
+combinator: engine.setVerbosityType
+	id: 5388c0ae
+	kind: function
+	type_id: 3fedd339
+args:
+   arg #1: 
+	name: type
+	flags: FLAG_NOVAR
+	var_num: -1
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: b5286e24
+	type_expr:
+   arg #2: 
+	name: verbosity
+	flags: FLAG_NOVAR
+	var_num: -1
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: a8509bda
+	type_expr:
+result_type:
+type-expr
+	flags: FLAG_NOVAR
+	type_id: 3fedd339
+	type_expr:
+combinator: engine.writeNop
+	id: 58160af4
+	kind: function
+	type_id: 3fedd339
+args:
+result_type:
+type-expr
+	flags: FLAG_NOVAR
+	type_id: 3fedd339
+	type_expr:
+combinator: engine.setVerbosity
+	id: 9d980926
+	kind: function
+	type_id: 3fedd339
+args:
+   arg #1: 
+	name: verbosity
+	flags: FLAG_NOVAR
+	var_num: -1
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: a8509bda
+	type_expr:
+result_type:
+type-expr
+	flags: FLAG_NOVAR
+	type_id: 3fedd339
+	type_expr:
+combinator: engine.sleep
+	id: 3d3bcd48
+	kind: function
+	type_id: 250be282
+args:
+   arg #1: 
+	name: time_ms
+	flags: FLAG_NOVAR
+	var_num: -1
+	exist_var_num: -1
+	exist_var_bit: 0
+type_expr:
+type-expr
+	flags: FLAG_BARE|FLAG_NOVAR
+	type_id: a8509bda
+	type_expr:
+result_type:
+type-expr
+	flags: FLAG_NOVAR
+	type_id: 250be282
+	type_expr:
+combinator: engine.version
+	id: 1a2e06fa
+	kind: function
+	type_id: b5286e24
+args:
+result_type:
+type-expr
+	flags: FLAG_NOVAR
+	type_id: b5286e24
+	type_expr:

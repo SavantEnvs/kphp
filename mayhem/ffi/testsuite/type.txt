@@ -1,0 +1,1 @@
+struct Foo foo_array[10][20]
